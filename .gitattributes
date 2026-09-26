@@ -61,3 +61,10 @@
 #*.PDF   diff=astextplain
 #*.rtf   diff=astextplain
 #*.RTF   diff=astextplain
+
+###############################################################################
+# Valheim save files are binary: never normalize line endings or diff/merge them.
+###############################################################################
+*.chunk        binary
+_main.*        binary
+cacheMinimap*  binary
