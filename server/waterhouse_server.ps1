@@ -17,7 +17,11 @@ param(
     [string]$World = 'Waterhouse',
     [string]$SaveDir = "$env:USERPROFILE\ValheimSaves",
     [int]$SaveInterval = 0,   # seconds; 0 = Valheim default (1800)
-    [switch]$Crossplay
+    [switch]$Crossplay,
+    # Extra valheim_server options passed through as-is, e.g. world modifiers:
+    #   "-preset hard -modifier deathpenalty veryeasy -modifier resources more -setkey nomap"
+    # They are stored in the world, so every host should use the same ones.
+    [string]$ExtraArgs = ''
 )
 
 $ErrorActionPreference = 'Stop'
@@ -123,6 +127,8 @@ $serverArgs = @(
 )
 if ($SaveInterval -gt 0) { $serverArgs += '-saveinterval', $SaveInterval }
 if ($Crossplay) { $serverArgs += '-crossplay' }
+$serverArgs += $ExtraArgs -split '\s+' | Where-Object { $_ }
+if ($ExtraArgs) { Write-Sync "Extra server options: $ExtraArgs" }
 
 if (Test-Path $LogFile) { Remove-Item $LogFile }
 Write-Sync 'Starting server. Press Ctrl-C to stop (it will save and push before exiting).'

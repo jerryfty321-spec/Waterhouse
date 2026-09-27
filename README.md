@@ -34,7 +34,13 @@ access to this repo.
    (Steam → Library → Valheim Dedicated Server → Manage → Browse local files), rename it,
    and replace `CHANGE_ME` with the server password. **Don't commit your copy** — this
    repo is public.
-4. Forward **UDP 2456–2458** on your router to the hosting PC so friends outside your
+4. Keep the `-ExtraArgs` world modifiers in your `.bat` the same as the template
+   (currently `-modifier deathpenalty veryeasy -modifier resources more`). They're
+   stored in the world, so a host with different ones changes it for everyone.
+   Valid values: `-preset normal|casual|easy|hard|hardcore|immersive|hammer`,
+   `-modifier combat|deathpenalty|resources|raids|portals <value>`,
+   `-setkey nobuildcost|playerevents|passivemobs|nomap` (see the Dedicated Server manual).
+5. Forward **UDP 2456–2458** on your router to the hosting PC so friends outside your
    network can join.
 
 ## Hosting a session
