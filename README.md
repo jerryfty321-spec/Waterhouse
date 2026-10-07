@@ -35,7 +35,7 @@ access to this repo.
    and replace `CHANGE_ME` with the server password. **Don't commit your copy** — this
    repo is public.
 4. Keep the `-ExtraArgs` world modifiers in your `.bat` the same as the template
-   (currently `-modifier deathpenalty veryeasy -modifier resources more`). They're
+   (currently `-modifier deathpenalty veryeasy -modifier resources more -modifier portals casual`). They're
    stored in the world, so a host with different ones changes it for everyone.
    Valid values: `-preset normal|casual|easy|hard|hardcore|immersive|hammer`,
    `-modifier combat|deathpenalty|resources|raids|portals <value>`,
