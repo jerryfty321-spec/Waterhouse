@@ -3,7 +3,8 @@
 #  1. On start: fetch the world repo, show what changed on GitHub, fast-forward to it.
 #     Refuses to start if local and GitHub history have diverged (someone else hosted
 #     while this copy also had unpushed saves) so neither copy gets overwritten.
-#  2. While running: every time the server logs "World save (5/5) done", commit and push.
+#  2. While running: after a world save ("World save (5/5) done"), commit and push if the
+#     last commit is at least -CommitIntervalMinutes old (default 4 hours).
 #  3. On shutdown (Ctrl-C): wait for the server's final save, then commit and push.
 #
 # Started from a .bat in the Valheim dedicated server folder (see start_server.example.bat
@@ -21,7 +22,10 @@ param(
     # Extra valheim_server options passed through as-is, e.g. world modifiers:
     #   "-preset hard -modifier deathpenalty veryeasy -modifier resources more -setkey nomap"
     # They are stored in the world, so every host should use the same ones.
-    [string]$ExtraArgs = ''
+    [string]$ExtraArgs = '',
+    # Minimum time between auto-save commits while running; 0 = commit every world save.
+    # Startup recovery and shutdown always commit.
+    [int]$CommitIntervalMinutes = 240
 )
 
 $ErrorActionPreference = 'Stop'
@@ -155,7 +159,13 @@ try {
         $lines = @(Read-LogLines)
         foreach ($line in $lines) {
             Write-Host $line
-            if ($line -match 'World save \(5/5\) done') { $null = Save-World 'Auto-save' }
+            if ($line -match 'World save \(5/5\) done') {
+                # Measured from the last commit (whoever made it), so restarts don't reset it.
+                $lastCommit = [DateTimeOffset]::FromUnixTimeSeconds([long](Invoke-Git log -1 --format=%ct).Out)
+                if (([DateTimeOffset]::Now - $lastCommit).TotalMinutes -ge $CommitIntervalMinutes) {
+                    $null = Save-World 'Auto-save'
+                }
+            }
         }
         if ($lines.Count -eq 0) { Start-Sleep -Milliseconds 500 }
     }

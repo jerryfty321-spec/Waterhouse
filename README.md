@@ -51,7 +51,8 @@ access to this repo.
      won't start until you pick which history to keep (in the repo folder).
    - `Could not reach GitHub` — you'll be asked whether to start from the local copy.
 2. Wait for `Game server connected`, then join.
-3. Every world save (default every 30 min) is committed and pushed automatically.
+3. The world saves every 30 min; the launcher commits and pushes at most every 4 hours
+   (`-CommitIntervalMinutes`), plus on shutdown.
 4. To stop: everyone logs out, then press **Ctrl-C** in the server window and wait for
    `Pushed to GitHub.` Closing the window instead can lose everything since the last
    auto-save (whatever was saved gets committed on the next start).
