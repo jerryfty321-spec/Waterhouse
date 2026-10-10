@@ -1,0 +1,58 @@
+# ArgusMagnus.ServersideQoL.ContainerSigns.Advanced.default.yml contains the default values and is overwritten regularly.
+# Rename it to ArgusMagnus.ServersideQoL.ContainerSigns.Advanced.yml if you want to change values.
+
+# IMPORTANT:
+# This file is for advanced tweaks.
+# You are expected to be familiar with YAML and its pitfalls if you decide to edit it.
+# Check the log for warnings related to this file.
+
+ChestSignOffsets:
+  piece_chest_wood:
+    Left: 0.8
+    Right: 0.8
+    Front: 0.4
+    Back: 0.4
+    VerticalOffset: 0.4
+    Top: 0.8
+  piece_chest:
+    Left: 0.85
+    Right: 0.85
+    Front: 0.5
+    Back: 0.5
+    VerticalOffset: 0.55
+    Top: 1.1
+  piece_chest_blackmetal:
+    Left: 0.95
+    Right: 0.95
+    Front: 0.7
+    Back: 0.7
+    VerticalOffset: 0.475
+    Top: 0.95
+  piece_chest_grausten:
+    Left: 0.8
+    Right: 0.8
+    Front: 0.5
+    Back: 0.5
+    VerticalOffset: 0.5
+    Top: 1.2
+  piece_chest_warderobe:
+    Left: 0.8
+    Right: 0.8
+    Front: 0.5
+    Back: 0.5
+    VerticalOffset: 1
+    Top: 2.7
+  piece_chest_barrel:
+    Left: 0.4
+    Right: 0.4
+    Front: 0.4
+    Back: 0.4
+    VerticalOffset: 0.45
+    Top: 0.9
+  incinerator:
+    Left: .nan
+    Right: .nan
+    Front: 0.1
+    Back: .nan
+    VerticalOffset: 1.5
+    Top: .nan

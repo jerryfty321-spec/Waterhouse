@@ -134,6 +134,23 @@ if ($Crossplay) { $serverArgs += '-crossplay' }
 $serverArgs += $ExtraArgs -split '\s+' | Where-Object { $_ }
 if ($ExtraArgs) { Write-Sync "Extra server options: $ExtraArgs" }
 
+# ServersideQoL mods: keep their settings in the world folder (this repo) so every host
+# runs the same ones. Only the ConfigPerWorld switch itself lives in the host's BepInEx.
+$sqolPlugin = Join-Path $ServerDir 'BepInEx\plugins\ArgusMagnus-ServersideQoL'
+if (Test-Path $sqolPlugin) {
+    $sqolCfg = Join-Path $ServerDir 'BepInEx\config\ArgusMagnus.ServersideQoL.cfg'
+    if (-not (Test-Path $sqolCfg)) {
+        New-Item -ItemType Directory -Force (Split-Path $sqolCfg) | Out-Null
+        Set-Content $sqolCfg "[General]`r`nConfigPerWorld = true" -Encoding utf8
+    } elseif ((Get-Content $sqolCfg -Raw) -match 'ConfigPerWorld = false') {
+        (Get-Content $sqolCfg -Raw) -replace 'ConfigPerWorld = false', 'ConfigPerWorld = true' |
+            Set-Content $sqolCfg -Encoding utf8 -NoNewline
+    }
+    Write-Sync 'ServersideQoL mods found; using mod settings from the world repo.'
+} else {
+    Write-Sync 'ServersideQoL mods NOT installed on this host; mod features will be off (see README).' Yellow
+}
+
 if (Test-Path $LogFile) { Remove-Item $LogFile }
 Write-Sync 'Starting server. Press Ctrl-C to stop (it will save and push before exiting).'
 $server = Start-Process (Join-Path $ServerDir 'valheim_server.exe') -ArgumentList $serverArgs `

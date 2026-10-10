@@ -40,7 +40,21 @@ access to this repo.
    Valid values: `-preset normal|casual|easy|hard|hardcore|immersive|hammer`,
    `-modifier combat|deathpenalty|resources|raids|portals <value>`,
    `-setkey nobuildcost|playerevents|passivemobs|nomap` (see the Dedicated Server manual).
-5. Forward **UDP 2456–2458** on your router to the hosting PC so friends outside your
+5. Install the server-side mods (players don't need anything). Install these from
+   [Thunderstore](https://thunderstore.io/c/valheim/) into the dedicated server folder,
+   with r2modman or by hand:
+   - `denikson-BepInExPack_Valheim` 5.4.2351 — copy the contents of its
+     `BepInExPack_Valheim` folder into the server folder
+   - `ValheimModding-YamlDotNet`, `ArgusMagnus-ServersideQoL` (core, incl. its `patchers` folder)
+   - `ArgusMagnus-ServersideQoL_` + `Player`, `Backpack`, `ContainerSigns`, `AutoProcess`,
+     `Treesurrection`, `MultiplayerTweaks`, `AdminOptions` — each into
+     `BepInEx\plugins\<package name>\`
+
+   The mod settings are the `ArgusMagnus.ServersideQoL*.cfg` files in this repo (next to
+   the world files), so every host runs the same ones. The launcher switches each host to
+   them automatically (`ConfigPerWorld = true`). Edit them here; the mod reloads changes
+   while the server is running.
+6. Forward **UDP 2456–2458** on your router to the hosting PC so friends outside your
    network can join.
 
 ## Hosting a session

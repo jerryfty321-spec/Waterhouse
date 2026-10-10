@@ -1,0 +1,17 @@
+# ArgusMagnus.ServersideQoL.Backpack.Advanced.default.yml contains the default values and is overwritten regularly.
+# Rename it to ArgusMagnus.ServersideQoL.Backpack.Advanced.yml if you want to change values.
+
+# IMPORTANT:
+# This file is for advanced tweaks.
+# You are expected to be familiar with YAML and its pitfalls if you decide to edit it.
+# Check the log for warnings related to this file.
+
+OpenBackpackDelay: 0.2
+BackpackOnDeathDropTombStone:
+  VerticalOffset: 2
+  AutoCollectDistance: 2
+BackpackOnDeathDropItems:
+  ScatterRadius: 2
+  VerticalOffset: 1
+  PreventAutoDestroy: true
+  PreventAutoPickup: false
