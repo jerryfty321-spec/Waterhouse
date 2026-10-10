@@ -47,7 +47,7 @@ access to this repo.
      `BepInExPack_Valheim` folder into the server folder
    - `ValheimModding-YamlDotNet`, `ArgusMagnus-ServersideQoL` (core, incl. its `patchers` folder)
    - `ArgusMagnus-ServersideQoL_` + `Player`, `Backpack`, `ContainerSigns`, `AutoProcess`,
-     `Treesurrection`, `MultiplayerTweaks`, `AdminOptions` — each into
+     `Treesurrection`, `MultiplayerTweaks`, `AdminOptions`, `AutoStore`, `PrefabConfigurator` — each into
      `BepInEx\plugins\<package name>\`
 
    The mod settings are the `ArgusMagnus.ServersideQoL*.cfg` files in this repo (next to

@@ -1,0 +1,12 @@
+# ArgusMagnus.ServersideQoL.AutoStore.Advanced.default.yml contains the default values and is overwritten regularly.
+# Rename it to ArgusMagnus.ServersideQoL.AutoStore.Advanced.yml if you want to change values.
+
+# IMPORTANT:
+# This file is for advanced tweaks.
+# You are expected to be familiar with YAML and its pitfalls if you decide to edit it.
+# Check the log for warnings related to this file.
+
+ContainerModifiedEffectPrefabName: fx_Potion_frostresist
+ProcessingDelays:
+  AfterItemDropOwnershipRequest: 0.2
+  StackContainerWhenMovingItems: 0.2
