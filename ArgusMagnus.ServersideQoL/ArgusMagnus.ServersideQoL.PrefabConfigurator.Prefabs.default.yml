@@ -161009,6 +161009,16 @@ Entries:
     m_targetTamedConfig: false
     m_maxConfigTargets: 1
     m_markerHideTime: 0.5
+- Component: UIGroupHandler
+  Enabled: false
+  PrefabNames:
+  - Valkyrie_End
+  Fields:
+    m_defaultElement: 
+    m_enableWhenActiveAndGamepad: 
+    m_groupPriority: 1
+    m_setDefaultOnKBM: false
+    m_resetActiveElementOnStateChange: true
 - Component: Vagon
   Enabled: false
   PrefabNames:
