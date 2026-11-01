@@ -52,8 +52,8 @@ access to this repo.
    - `Advize-PlantEverything` — into `BepInEx\plugins\Advize-PlantEverything\`. Unlike the
      others, **players need it too** (installed in their own game) to plant the extra
      things with the cultivator; players without it can still see and pick them. Its
-     settings are in the host's `BepInEx\config\advize.PlantEverything.cfg` and are synced
-     to players while they're connected.
+     settings are shared through this repo (see below) and synced to players while
+     they're connected.
    - `shudnal-Seasons` plus its dependencies `shudnal-ConditionalConfigSync` and
      `ValheimModding-JsonDotNET` — each into `BepInEx\plugins\<package name>\`.
      **Every player must have all three installed too**, or they can't join properly.
@@ -65,13 +65,14 @@ access to this repo.
    them automatically (`ConfigPerWorld = true`). Edit them here; the mod reloads changes
    while the server is running.
 
-   Seasons can only read its settings from the server's `BepInEx\config`, so the shared
-   copy is in `bepinex-config\` here (`shudnal.Seasons.cfg`, override files in
-   `shudnal.Seasons\`, and `shudnal.ConditionalConfigSync\`). The launcher copies them into
+   Seasons and PlantEverything can only read their settings from the server's
+   `BepInEx\config`, so the shared copy is in `bepinex-config\` here
+   (`shudnal.Seasons.cfg`, override files in `shudnal.Seasons\`,
+   `shudnal.ConditionalConfigSync\`, `advize.PlantEverything.cfg`, and the
+   `PlantEverything\` folder for extra cultivator entries). The launcher copies them into
    `BepInEx\config` before the server starts and copies them back before every commit.
    **Edit them in `BepInEx\config`** (the mod reloads them while running), not in
    `bepinex-config\`: changes made there while the server runs get overwritten.
-   PlantEverything's `advize.PlantEverything.cfg` stays per host for now.
 6. Forward **UDP 2456–2458** on your router to the hosting PC so friends outside your
    network can join.
 
