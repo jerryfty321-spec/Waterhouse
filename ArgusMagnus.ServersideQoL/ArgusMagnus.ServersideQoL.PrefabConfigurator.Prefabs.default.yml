@@ -25262,6 +25262,74 @@ Entries:
     m_autoCreateFragments: false
     m_hitEffectBigThreshold: 0
     m_hitEffectBuildUpThreshold: 0
+- Component: Destructible
+  Enabled: false
+  PrefabNames:
+  - Ashwood_Sapling
+  Fields:
+    m_health: 1
+    m_minDamageTreshold: 0
+    m_minToolTier: 0
+    m_hitNoise: 0
+    m_destroyNoise: 0
+    m_triggerPrivateArea: false
+    m_ttl: 0
+    m_spawnWhenDamaged: 
+    m_spawnWhenDestroyed: 
+    m_autoCreateFragments: true
+    m_hitEffectBigThreshold: 0
+    m_hitEffectBuildUpThreshold: 0
+- Component: Destructible
+  Enabled: false
+  PrefabNames:
+  - Ygga_Sapling
+  Fields:
+    m_health: 1
+    m_minDamageTreshold: 0
+    m_minToolTier: 0
+    m_hitNoise: 0
+    m_destroyNoise: 0
+    m_triggerPrivateArea: false
+    m_ttl: 0
+    m_spawnWhenDamaged: 
+    m_spawnWhenDestroyed: 
+    m_autoCreateFragments: true
+    m_hitEffectBigThreshold: 0
+    m_hitEffectBuildUpThreshold: 0
+- Component: Destructible
+  Enabled: false
+  PrefabNames:
+  - Ancient_Sapling
+  Fields:
+    m_health: 1
+    m_minDamageTreshold: 0
+    m_minToolTier: 0
+    m_hitNoise: 0
+    m_destroyNoise: 0
+    m_triggerPrivateArea: false
+    m_ttl: 0
+    m_spawnWhenDamaged: 
+    m_spawnWhenDestroyed: 
+    m_autoCreateFragments: true
+    m_hitEffectBigThreshold: 0
+    m_hitEffectBuildUpThreshold: 0
+- Component: Destructible
+  Enabled: false
+  PrefabNames:
+  - Autumn_Birch_Sapling
+  Fields:
+    m_health: 1
+    m_minDamageTreshold: 0
+    m_minToolTier: 0
+    m_hitNoise: 0
+    m_destroyNoise: 0
+    m_triggerPrivateArea: false
+    m_ttl: 0
+    m_spawnWhenDamaged: 
+    m_spawnWhenDestroyed: 
+    m_autoCreateFragments: true
+    m_hitEffectBigThreshold: 0
+    m_hitEffectBuildUpThreshold: 0
 - Component: Door
   Enabled: false
   PrefabNames:
@@ -93386,7 +93454,7 @@ Entries:
     m_hideWhenPicked: visual
     m_itemPrefab: Fiddleheadfern
     m_loopAudioSource: 
-    m_amount: 1
+    m_amount: 3
     m_minAmountScaled: 1
     m_dontScale: false
     m_overrideName: ''
@@ -97880,6 +97948,57 @@ Entries:
 - Component: Piece
   Enabled: false
   PrefabNames:
+  - Beech_small1
+  Fields:
+    m_targetNonPlayerBuilt: false
+    m_name: $peBeechSmallName
+    m_description: $peBeechSmallDescription
+    m_enabled: true
+    m_isUpgrade: false
+    m_comfort: 0
+    m_comfortObject: 
+    m_groundPiece: true
+    m_allowAltGroundPlacement: false
+    m_groundOnly: true
+    m_cultivatedGroundOnly: false
+    m_waterPiece: false
+    m_clipGround: false
+    m_clipEverything: false
+    m_noInWater: false
+    m_notOnWood: false
+    m_notOnTiltingSurface: false
+    m_inCeilingOnly: false
+    m_notOnFloor: false
+    m_noClipping: false
+    m_onlyInTeleportArea: false
+    m_allowedInDungeons: false
+    m_allowedInDeepSnow: false
+    m_requireDeepSnow: false
+    m_spaceRequirement: 0
+    m_repairPiece: false
+    m_removePiece: false
+    m_canRotate: true
+    m_randomInitBuildRotation: false
+    m_canBeRemoved: false
+    m_canRockJade: false
+    m_allowRotatedOverlap: false
+    m_vegetationGroundOnly: false
+    m_blockRadius: 0
+    m_connectRadius: 0
+    m_mustBeAboveConnected: false
+    m_noVines: false
+    m_extraPlacementDistance: 0
+    m_harvest: false
+    m_harvestRadius: 0
+    m_harvestRadiusMaxLevel: 0
+    m_dlc: ''
+    m_returnResourceHeightOffset: 1
+    m_destroyedLootPrefab: 
+    m_primaryTarget: false
+    m_randomTarget: true
+- Component: Piece
+  Enabled: false
+  PrefabNames:
   - Birch_Sapling
   Fields:
     m_targetNonPlayerBuilt: true
@@ -100481,6 +100600,57 @@ Entries:
 - Component: Piece
   Enabled: false
   PrefabNames:
+  - BlueberryBush
+  Fields:
+    m_targetNonPlayerBuilt: false
+    m_name: $peBlueberryBushName
+    m_description: $peBlueberryBushDescription
+    m_enabled: true
+    m_isUpgrade: false
+    m_comfort: 0
+    m_comfortObject: 
+    m_groundPiece: true
+    m_allowAltGroundPlacement: false
+    m_groundOnly: true
+    m_cultivatedGroundOnly: false
+    m_waterPiece: false
+    m_clipGround: false
+    m_clipEverything: false
+    m_noInWater: false
+    m_notOnWood: false
+    m_notOnTiltingSurface: false
+    m_inCeilingOnly: false
+    m_notOnFloor: false
+    m_noClipping: false
+    m_onlyInTeleportArea: false
+    m_allowedInDungeons: false
+    m_allowedInDeepSnow: false
+    m_requireDeepSnow: false
+    m_spaceRequirement: 0
+    m_repairPiece: false
+    m_removePiece: false
+    m_canRotate: true
+    m_randomInitBuildRotation: false
+    m_canBeRemoved: true
+    m_canRockJade: false
+    m_allowRotatedOverlap: false
+    m_vegetationGroundOnly: false
+    m_blockRadius: 0
+    m_connectRadius: 0
+    m_mustBeAboveConnected: false
+    m_noVines: false
+    m_extraPlacementDistance: 0
+    m_harvest: false
+    m_harvestRadius: 0
+    m_harvestRadiusMaxLevel: 0
+    m_dlc: ''
+    m_returnResourceHeightOffset: 1
+    m_destroyedLootPrefab: 
+    m_primaryTarget: false
+    m_randomTarget: true
+- Component: Piece
+  Enabled: false
+  PrefabNames:
   - BoarJerky
   Fields:
     m_targetNonPlayerBuilt: true
@@ -100730,6 +100900,159 @@ Entries:
     m_harvestRadiusMaxLevel: 0
     m_dlc: ''
     m_returnResourceHeightOffset: 0.1
+    m_destroyedLootPrefab: 
+    m_primaryTarget: false
+    m_randomTarget: true
+- Component: Piece
+  Enabled: false
+  PrefabNames:
+  - Bush01
+  Fields:
+    m_targetNonPlayerBuilt: false
+    m_name: $peBush01Name
+    m_description: $peBush01Description
+    m_enabled: true
+    m_isUpgrade: false
+    m_comfort: 0
+    m_comfortObject: 
+    m_groundPiece: true
+    m_allowAltGroundPlacement: false
+    m_groundOnly: true
+    m_cultivatedGroundOnly: false
+    m_waterPiece: false
+    m_clipGround: false
+    m_clipEverything: false
+    m_noInWater: false
+    m_notOnWood: false
+    m_notOnTiltingSurface: false
+    m_inCeilingOnly: false
+    m_notOnFloor: false
+    m_noClipping: false
+    m_onlyInTeleportArea: false
+    m_allowedInDungeons: false
+    m_allowedInDeepSnow: false
+    m_requireDeepSnow: false
+    m_spaceRequirement: 0
+    m_repairPiece: false
+    m_removePiece: false
+    m_canRotate: true
+    m_randomInitBuildRotation: false
+    m_canBeRemoved: false
+    m_canRockJade: false
+    m_allowRotatedOverlap: false
+    m_vegetationGroundOnly: false
+    m_blockRadius: 0
+    m_connectRadius: 0
+    m_mustBeAboveConnected: false
+    m_noVines: false
+    m_extraPlacementDistance: 0
+    m_harvest: false
+    m_harvestRadius: 0
+    m_harvestRadiusMaxLevel: 0
+    m_dlc: ''
+    m_returnResourceHeightOffset: 1
+    m_destroyedLootPrefab: 
+    m_primaryTarget: false
+    m_randomTarget: true
+- Component: Piece
+  Enabled: false
+  PrefabNames:
+  - Bush01_heath
+  Fields:
+    m_targetNonPlayerBuilt: false
+    m_name: $peBush02Name
+    m_description: $peBush02Description
+    m_enabled: true
+    m_isUpgrade: false
+    m_comfort: 0
+    m_comfortObject: 
+    m_groundPiece: true
+    m_allowAltGroundPlacement: false
+    m_groundOnly: true
+    m_cultivatedGroundOnly: false
+    m_waterPiece: false
+    m_clipGround: false
+    m_clipEverything: false
+    m_noInWater: false
+    m_notOnWood: false
+    m_notOnTiltingSurface: false
+    m_inCeilingOnly: false
+    m_notOnFloor: false
+    m_noClipping: false
+    m_onlyInTeleportArea: false
+    m_allowedInDungeons: false
+    m_allowedInDeepSnow: false
+    m_requireDeepSnow: false
+    m_spaceRequirement: 0
+    m_repairPiece: false
+    m_removePiece: false
+    m_canRotate: true
+    m_randomInitBuildRotation: false
+    m_canBeRemoved: false
+    m_canRockJade: false
+    m_allowRotatedOverlap: false
+    m_vegetationGroundOnly: false
+    m_blockRadius: 0
+    m_connectRadius: 0
+    m_mustBeAboveConnected: false
+    m_noVines: false
+    m_extraPlacementDistance: 0
+    m_harvest: false
+    m_harvestRadius: 0
+    m_harvestRadiusMaxLevel: 0
+    m_dlc: ''
+    m_returnResourceHeightOffset: 1
+    m_destroyedLootPrefab: 
+    m_primaryTarget: false
+    m_randomTarget: true
+- Component: Piece
+  Enabled: false
+  PrefabNames:
+  - Bush02_en
+  Fields:
+    m_targetNonPlayerBuilt: false
+    m_name: $pePlainsBushName
+    m_description: $pePlainsBushDescription
+    m_enabled: true
+    m_isUpgrade: false
+    m_comfort: 0
+    m_comfortObject: 
+    m_groundPiece: true
+    m_allowAltGroundPlacement: false
+    m_groundOnly: true
+    m_cultivatedGroundOnly: false
+    m_waterPiece: false
+    m_clipGround: false
+    m_clipEverything: false
+    m_noInWater: false
+    m_notOnWood: false
+    m_notOnTiltingSurface: false
+    m_inCeilingOnly: false
+    m_notOnFloor: false
+    m_noClipping: false
+    m_onlyInTeleportArea: false
+    m_allowedInDungeons: false
+    m_allowedInDeepSnow: false
+    m_requireDeepSnow: false
+    m_spaceRequirement: 0
+    m_repairPiece: false
+    m_removePiece: false
+    m_canRotate: true
+    m_randomInitBuildRotation: false
+    m_canBeRemoved: false
+    m_canRockJade: false
+    m_allowRotatedOverlap: false
+    m_vegetationGroundOnly: false
+    m_blockRadius: 0
+    m_connectRadius: 0
+    m_mustBeAboveConnected: false
+    m_noVines: false
+    m_extraPlacementDistance: 0
+    m_harvest: false
+    m_harvestRadius: 0
+    m_harvestRadiusMaxLevel: 0
+    m_dlc: ''
+    m_returnResourceHeightOffset: 1
     m_destroyedLootPrefab: 
     m_primaryTarget: false
     m_randomTarget: true
@@ -101495,6 +101818,57 @@ Entries:
     m_harvestRadiusMaxLevel: 0
     m_dlc: ''
     m_returnResourceHeightOffset: 0.1
+    m_destroyedLootPrefab: 
+    m_primaryTarget: false
+    m_randomTarget: true
+- Component: Piece
+  Enabled: false
+  PrefabNames:
+  - CloudberryBush
+  Fields:
+    m_targetNonPlayerBuilt: false
+    m_name: $peCloudberryBushName
+    m_description: $peCloudberryBushDescription
+    m_enabled: true
+    m_isUpgrade: false
+    m_comfort: 0
+    m_comfortObject: 
+    m_groundPiece: true
+    m_allowAltGroundPlacement: false
+    m_groundOnly: true
+    m_cultivatedGroundOnly: false
+    m_waterPiece: false
+    m_clipGround: false
+    m_clipEverything: false
+    m_noInWater: false
+    m_notOnWood: false
+    m_notOnTiltingSurface: false
+    m_inCeilingOnly: false
+    m_notOnFloor: false
+    m_noClipping: false
+    m_onlyInTeleportArea: false
+    m_allowedInDungeons: false
+    m_allowedInDeepSnow: false
+    m_requireDeepSnow: false
+    m_spaceRequirement: 0
+    m_repairPiece: false
+    m_removePiece: false
+    m_canRotate: true
+    m_randomInitBuildRotation: false
+    m_canBeRemoved: true
+    m_canRockJade: false
+    m_allowRotatedOverlap: false
+    m_vegetationGroundOnly: false
+    m_blockRadius: 0
+    m_connectRadius: 0
+    m_mustBeAboveConnected: false
+    m_noVines: false
+    m_extraPlacementDistance: 0
+    m_harvest: false
+    m_harvestRadius: 0
+    m_harvestRadiusMaxLevel: 0
+    m_dlc: ''
+    m_returnResourceHeightOffset: 1
     m_destroyedLootPrefab: 
     m_primaryTarget: false
     m_randomTarget: true
@@ -104408,6 +104782,57 @@ Entries:
 - Component: Piece
   Enabled: false
   PrefabNames:
+  - FernAshlands
+  Fields:
+    m_targetNonPlayerBuilt: false
+    m_name: $peAshlandsFernName
+    m_description: $peAshlandsFernDescription
+    m_enabled: true
+    m_isUpgrade: false
+    m_comfort: 0
+    m_comfortObject: 
+    m_groundPiece: true
+    m_allowAltGroundPlacement: false
+    m_groundOnly: true
+    m_cultivatedGroundOnly: false
+    m_waterPiece: false
+    m_clipGround: false
+    m_clipEverything: false
+    m_noInWater: false
+    m_notOnWood: false
+    m_notOnTiltingSurface: false
+    m_inCeilingOnly: false
+    m_notOnFloor: false
+    m_noClipping: false
+    m_onlyInTeleportArea: false
+    m_allowedInDungeons: false
+    m_allowedInDeepSnow: false
+    m_requireDeepSnow: false
+    m_spaceRequirement: 0
+    m_repairPiece: false
+    m_removePiece: false
+    m_canRotate: true
+    m_randomInitBuildRotation: false
+    m_canBeRemoved: false
+    m_canRockJade: false
+    m_allowRotatedOverlap: false
+    m_vegetationGroundOnly: false
+    m_blockRadius: 0
+    m_connectRadius: 0
+    m_mustBeAboveConnected: false
+    m_noVines: false
+    m_extraPlacementDistance: 0
+    m_harvest: false
+    m_harvestRadius: 0
+    m_harvestRadiusMaxLevel: 0
+    m_dlc: ''
+    m_returnResourceHeightOffset: 1
+    m_destroyedLootPrefab: 
+    m_primaryTarget: false
+    m_randomTarget: true
+- Component: Piece
+  Enabled: false
+  PrefabNames:
   - Fiddleheadfern
   Fields:
     m_targetNonPlayerBuilt: true
@@ -104813,6 +105238,108 @@ Entries:
     m_destroyedLootPrefab: 
     m_primaryTarget: false
     m_randomTarget: false
+- Component: Piece
+  Enabled: false
+  PrefabNames:
+  - FirTree_small
+  Fields:
+    m_targetNonPlayerBuilt: false
+    m_name: $peFirSmallName
+    m_description: $peFirSmallDescription
+    m_enabled: true
+    m_isUpgrade: false
+    m_comfort: 0
+    m_comfortObject: 
+    m_groundPiece: true
+    m_allowAltGroundPlacement: false
+    m_groundOnly: true
+    m_cultivatedGroundOnly: false
+    m_waterPiece: false
+    m_clipGround: false
+    m_clipEverything: false
+    m_noInWater: false
+    m_notOnWood: false
+    m_notOnTiltingSurface: false
+    m_inCeilingOnly: false
+    m_notOnFloor: false
+    m_noClipping: false
+    m_onlyInTeleportArea: false
+    m_allowedInDungeons: false
+    m_allowedInDeepSnow: false
+    m_requireDeepSnow: false
+    m_spaceRequirement: 0
+    m_repairPiece: false
+    m_removePiece: false
+    m_canRotate: true
+    m_randomInitBuildRotation: false
+    m_canBeRemoved: false
+    m_canRockJade: false
+    m_allowRotatedOverlap: false
+    m_vegetationGroundOnly: false
+    m_blockRadius: 0
+    m_connectRadius: 0
+    m_mustBeAboveConnected: false
+    m_noVines: false
+    m_extraPlacementDistance: 0
+    m_harvest: false
+    m_harvestRadius: 0
+    m_harvestRadiusMaxLevel: 0
+    m_dlc: ''
+    m_returnResourceHeightOffset: 1
+    m_destroyedLootPrefab: 
+    m_primaryTarget: false
+    m_randomTarget: true
+- Component: Piece
+  Enabled: false
+  PrefabNames:
+  - FirTree_small_dead
+  Fields:
+    m_targetNonPlayerBuilt: false
+    m_name: $peFirSmallDeadName
+    m_description: $peFirSmallDeadDescription
+    m_enabled: true
+    m_isUpgrade: false
+    m_comfort: 0
+    m_comfortObject: 
+    m_groundPiece: true
+    m_allowAltGroundPlacement: false
+    m_groundOnly: true
+    m_cultivatedGroundOnly: false
+    m_waterPiece: false
+    m_clipGround: false
+    m_clipEverything: false
+    m_noInWater: false
+    m_notOnWood: false
+    m_notOnTiltingSurface: false
+    m_inCeilingOnly: false
+    m_notOnFloor: false
+    m_noClipping: false
+    m_onlyInTeleportArea: false
+    m_allowedInDungeons: false
+    m_allowedInDeepSnow: false
+    m_requireDeepSnow: false
+    m_spaceRequirement: 0
+    m_repairPiece: false
+    m_removePiece: false
+    m_canRotate: true
+    m_randomInitBuildRotation: false
+    m_canBeRemoved: false
+    m_canRockJade: false
+    m_allowRotatedOverlap: false
+    m_vegetationGroundOnly: false
+    m_blockRadius: 0
+    m_connectRadius: 0
+    m_mustBeAboveConnected: false
+    m_noVines: false
+    m_extraPlacementDistance: 0
+    m_harvest: false
+    m_harvestRadius: 0
+    m_harvestRadiusMaxLevel: 0
+    m_dlc: ''
+    m_returnResourceHeightOffset: 1
+    m_destroyedLootPrefab: 
+    m_primaryTarget: false
+    m_randomTarget: true
 - Component: Piece
   Enabled: false
   PrefabNames:
@@ -106799,6 +107326,57 @@ Entries:
     m_harvestRadiusMaxLevel: 0
     m_dlc: ''
     m_returnResourceHeightOffset: 0.1
+    m_destroyedLootPrefab: 
+    m_primaryTarget: false
+    m_randomTarget: true
+- Component: Piece
+  Enabled: false
+  PrefabNames:
+  - LingonberryBush
+  Fields:
+    m_targetNonPlayerBuilt: false
+    m_name: $peLingonberryBushName
+    m_description: $peLingonberryBushDescription
+    m_enabled: true
+    m_isUpgrade: false
+    m_comfort: 0
+    m_comfortObject: 
+    m_groundPiece: true
+    m_allowAltGroundPlacement: false
+    m_groundOnly: true
+    m_cultivatedGroundOnly: false
+    m_waterPiece: false
+    m_clipGround: false
+    m_clipEverything: false
+    m_noInWater: false
+    m_notOnWood: false
+    m_notOnTiltingSurface: false
+    m_inCeilingOnly: false
+    m_notOnFloor: false
+    m_noClipping: false
+    m_onlyInTeleportArea: false
+    m_allowedInDungeons: false
+    m_allowedInDeepSnow: false
+    m_requireDeepSnow: false
+    m_spaceRequirement: 0
+    m_repairPiece: false
+    m_removePiece: false
+    m_canRotate: true
+    m_randomInitBuildRotation: false
+    m_canBeRemoved: true
+    m_canRockJade: false
+    m_allowRotatedOverlap: false
+    m_vegetationGroundOnly: false
+    m_blockRadius: 0
+    m_connectRadius: 0
+    m_mustBeAboveConnected: false
+    m_noVines: false
+    m_extraPlacementDistance: 0
+    m_harvest: false
+    m_harvestRadius: 0
+    m_harvestRadiusMaxLevel: 0
+    m_dlc: ''
+    m_returnResourceHeightOffset: 1
     m_destroyedLootPrefab: 
     m_primaryTarget: false
     m_randomTarget: true
@@ -110015,6 +110593,516 @@ Entries:
     m_destroyedLootPrefab: 
     m_primaryTarget: false
     m_randomTarget: false
+- Component: Piece
+  Enabled: false
+  PrefabNames:
+  - Pickable_Branch
+  Fields:
+    m_targetNonPlayerBuilt: false
+    m_name: $pePickableBranchName
+    m_description: $pePickableBranchDescription
+    m_enabled: true
+    m_isUpgrade: false
+    m_comfort: 0
+    m_comfortObject: 
+    m_groundPiece: true
+    m_allowAltGroundPlacement: false
+    m_groundOnly: true
+    m_cultivatedGroundOnly: false
+    m_waterPiece: false
+    m_clipGround: false
+    m_clipEverything: false
+    m_noInWater: false
+    m_notOnWood: false
+    m_notOnTiltingSurface: false
+    m_inCeilingOnly: false
+    m_notOnFloor: false
+    m_noClipping: false
+    m_onlyInTeleportArea: false
+    m_allowedInDungeons: false
+    m_allowedInDeepSnow: false
+    m_requireDeepSnow: false
+    m_spaceRequirement: 0
+    m_repairPiece: false
+    m_removePiece: false
+    m_canRotate: true
+    m_randomInitBuildRotation: false
+    m_canBeRemoved: true
+    m_canRockJade: false
+    m_allowRotatedOverlap: false
+    m_vegetationGroundOnly: false
+    m_blockRadius: 0
+    m_connectRadius: 0
+    m_mustBeAboveConnected: false
+    m_noVines: false
+    m_extraPlacementDistance: 0
+    m_harvest: false
+    m_harvestRadius: 0
+    m_harvestRadiusMaxLevel: 0
+    m_dlc: ''
+    m_returnResourceHeightOffset: 1
+    m_destroyedLootPrefab: 
+    m_primaryTarget: false
+    m_randomTarget: true
+- Component: Piece
+  Enabled: false
+  PrefabNames:
+  - Pickable_Dandelion
+  Fields:
+    m_targetNonPlayerBuilt: false
+    m_name: $pePickableDandelionName
+    m_description: $pePickableDandelionDescription
+    m_enabled: true
+    m_isUpgrade: false
+    m_comfort: 0
+    m_comfortObject: 
+    m_groundPiece: true
+    m_allowAltGroundPlacement: false
+    m_groundOnly: true
+    m_cultivatedGroundOnly: false
+    m_waterPiece: false
+    m_clipGround: false
+    m_clipEverything: false
+    m_noInWater: false
+    m_notOnWood: false
+    m_notOnTiltingSurface: false
+    m_inCeilingOnly: false
+    m_notOnFloor: false
+    m_noClipping: false
+    m_onlyInTeleportArea: false
+    m_allowedInDungeons: false
+    m_allowedInDeepSnow: false
+    m_requireDeepSnow: false
+    m_spaceRequirement: 0
+    m_repairPiece: false
+    m_removePiece: false
+    m_canRotate: true
+    m_randomInitBuildRotation: false
+    m_canBeRemoved: true
+    m_canRockJade: false
+    m_allowRotatedOverlap: false
+    m_vegetationGroundOnly: false
+    m_blockRadius: 0
+    m_connectRadius: 0
+    m_mustBeAboveConnected: false
+    m_noVines: false
+    m_extraPlacementDistance: 0
+    m_harvest: false
+    m_harvestRadius: 0
+    m_harvestRadiusMaxLevel: 0
+    m_dlc: ''
+    m_returnResourceHeightOffset: 1
+    m_destroyedLootPrefab: 
+    m_primaryTarget: false
+    m_randomTarget: true
+- Component: Piece
+  Enabled: false
+  PrefabNames:
+  - Pickable_Fiddlehead
+  Fields:
+    m_targetNonPlayerBuilt: false
+    m_name: $pePickableFiddleheadName
+    m_description: $pePickableFiddleheadDescription
+    m_enabled: true
+    m_isUpgrade: false
+    m_comfort: 0
+    m_comfortObject: 
+    m_groundPiece: true
+    m_allowAltGroundPlacement: false
+    m_groundOnly: true
+    m_cultivatedGroundOnly: false
+    m_waterPiece: false
+    m_clipGround: false
+    m_clipEverything: false
+    m_noInWater: false
+    m_notOnWood: false
+    m_notOnTiltingSurface: false
+    m_inCeilingOnly: false
+    m_notOnFloor: false
+    m_noClipping: false
+    m_onlyInTeleportArea: false
+    m_allowedInDungeons: false
+    m_allowedInDeepSnow: false
+    m_requireDeepSnow: false
+    m_spaceRequirement: 0
+    m_repairPiece: false
+    m_removePiece: false
+    m_canRotate: true
+    m_randomInitBuildRotation: false
+    m_canBeRemoved: true
+    m_canRockJade: false
+    m_allowRotatedOverlap: false
+    m_vegetationGroundOnly: false
+    m_blockRadius: 0
+    m_connectRadius: 0
+    m_mustBeAboveConnected: false
+    m_noVines: false
+    m_extraPlacementDistance: 0
+    m_harvest: false
+    m_harvestRadius: 0
+    m_harvestRadiusMaxLevel: 0
+    m_dlc: ''
+    m_returnResourceHeightOffset: 1
+    m_destroyedLootPrefab: 
+    m_primaryTarget: false
+    m_randomTarget: true
+- Component: Piece
+  Enabled: false
+  PrefabNames:
+  - Pickable_Flint
+  Fields:
+    m_targetNonPlayerBuilt: false
+    m_name: $pePickableFlintName
+    m_description: $pePickableFlintDescription
+    m_enabled: true
+    m_isUpgrade: false
+    m_comfort: 0
+    m_comfortObject: 
+    m_groundPiece: true
+    m_allowAltGroundPlacement: false
+    m_groundOnly: true
+    m_cultivatedGroundOnly: false
+    m_waterPiece: false
+    m_clipGround: false
+    m_clipEverything: false
+    m_noInWater: false
+    m_notOnWood: false
+    m_notOnTiltingSurface: false
+    m_inCeilingOnly: false
+    m_notOnFloor: false
+    m_noClipping: false
+    m_onlyInTeleportArea: false
+    m_allowedInDungeons: false
+    m_allowedInDeepSnow: false
+    m_requireDeepSnow: false
+    m_spaceRequirement: 0
+    m_repairPiece: false
+    m_removePiece: false
+    m_canRotate: true
+    m_randomInitBuildRotation: false
+    m_canBeRemoved: true
+    m_canRockJade: false
+    m_allowRotatedOverlap: false
+    m_vegetationGroundOnly: false
+    m_blockRadius: 0
+    m_connectRadius: 0
+    m_mustBeAboveConnected: false
+    m_noVines: false
+    m_extraPlacementDistance: 0
+    m_harvest: false
+    m_harvestRadius: 0
+    m_harvestRadiusMaxLevel: 0
+    m_dlc: ''
+    m_returnResourceHeightOffset: 1
+    m_destroyedLootPrefab: 
+    m_primaryTarget: false
+    m_randomTarget: true
+- Component: Piece
+  Enabled: false
+  PrefabNames:
+  - Pickable_Mushroom
+  Fields:
+    m_targetNonPlayerBuilt: false
+    m_name: $pePickableMushroomName
+    m_description: $pePickableMushroomDescription
+    m_enabled: true
+    m_isUpgrade: false
+    m_comfort: 0
+    m_comfortObject: 
+    m_groundPiece: true
+    m_allowAltGroundPlacement: false
+    m_groundOnly: true
+    m_cultivatedGroundOnly: false
+    m_waterPiece: false
+    m_clipGround: false
+    m_clipEverything: false
+    m_noInWater: false
+    m_notOnWood: false
+    m_notOnTiltingSurface: false
+    m_inCeilingOnly: false
+    m_notOnFloor: false
+    m_noClipping: false
+    m_onlyInTeleportArea: false
+    m_allowedInDungeons: false
+    m_allowedInDeepSnow: false
+    m_requireDeepSnow: false
+    m_spaceRequirement: 0
+    m_repairPiece: false
+    m_removePiece: false
+    m_canRotate: true
+    m_randomInitBuildRotation: false
+    m_canBeRemoved: true
+    m_canRockJade: false
+    m_allowRotatedOverlap: false
+    m_vegetationGroundOnly: false
+    m_blockRadius: 0
+    m_connectRadius: 0
+    m_mustBeAboveConnected: false
+    m_noVines: false
+    m_extraPlacementDistance: 0
+    m_harvest: false
+    m_harvestRadius: 0
+    m_harvestRadiusMaxLevel: 0
+    m_dlc: ''
+    m_returnResourceHeightOffset: 1
+    m_destroyedLootPrefab: 
+    m_primaryTarget: false
+    m_randomTarget: true
+- Component: Piece
+  Enabled: false
+  PrefabNames:
+  - Pickable_Mushroom_blue
+  Fields:
+    m_targetNonPlayerBuilt: false
+    m_name: $pePickableBlueMushroomName
+    m_description: $pePickableBlueMushroomDescription
+    m_enabled: true
+    m_isUpgrade: false
+    m_comfort: 0
+    m_comfortObject: 
+    m_groundPiece: true
+    m_allowAltGroundPlacement: false
+    m_groundOnly: true
+    m_cultivatedGroundOnly: false
+    m_waterPiece: false
+    m_clipGround: false
+    m_clipEverything: false
+    m_noInWater: false
+    m_notOnWood: false
+    m_notOnTiltingSurface: false
+    m_inCeilingOnly: false
+    m_notOnFloor: false
+    m_noClipping: false
+    m_onlyInTeleportArea: false
+    m_allowedInDungeons: false
+    m_allowedInDeepSnow: false
+    m_requireDeepSnow: false
+    m_spaceRequirement: 0
+    m_repairPiece: false
+    m_removePiece: false
+    m_canRotate: true
+    m_randomInitBuildRotation: false
+    m_canBeRemoved: true
+    m_canRockJade: false
+    m_allowRotatedOverlap: false
+    m_vegetationGroundOnly: false
+    m_blockRadius: 0
+    m_connectRadius: 0
+    m_mustBeAboveConnected: false
+    m_noVines: false
+    m_extraPlacementDistance: 0
+    m_harvest: false
+    m_harvestRadius: 0
+    m_harvestRadiusMaxLevel: 0
+    m_dlc: ''
+    m_returnResourceHeightOffset: 1
+    m_destroyedLootPrefab: 
+    m_primaryTarget: false
+    m_randomTarget: true
+- Component: Piece
+  Enabled: false
+  PrefabNames:
+  - Pickable_Mushroom_yellow
+  Fields:
+    m_targetNonPlayerBuilt: false
+    m_name: $pePickableYellowMushroomName
+    m_description: $pePickableYellowMushroomDescription
+    m_enabled: true
+    m_isUpgrade: false
+    m_comfort: 0
+    m_comfortObject: 
+    m_groundPiece: true
+    m_allowAltGroundPlacement: false
+    m_groundOnly: true
+    m_cultivatedGroundOnly: false
+    m_waterPiece: false
+    m_clipGround: false
+    m_clipEverything: false
+    m_noInWater: false
+    m_notOnWood: false
+    m_notOnTiltingSurface: false
+    m_inCeilingOnly: false
+    m_notOnFloor: false
+    m_noClipping: false
+    m_onlyInTeleportArea: false
+    m_allowedInDungeons: false
+    m_allowedInDeepSnow: false
+    m_requireDeepSnow: false
+    m_spaceRequirement: 0
+    m_repairPiece: false
+    m_removePiece: false
+    m_canRotate: true
+    m_randomInitBuildRotation: false
+    m_canBeRemoved: true
+    m_canRockJade: false
+    m_allowRotatedOverlap: false
+    m_vegetationGroundOnly: false
+    m_blockRadius: 0
+    m_connectRadius: 0
+    m_mustBeAboveConnected: false
+    m_noVines: false
+    m_extraPlacementDistance: 0
+    m_harvest: false
+    m_harvestRadius: 0
+    m_harvestRadiusMaxLevel: 0
+    m_dlc: ''
+    m_returnResourceHeightOffset: 1
+    m_destroyedLootPrefab: 
+    m_primaryTarget: false
+    m_randomTarget: true
+- Component: Piece
+  Enabled: false
+  PrefabNames:
+  - Pickable_SmokePuff
+  Fields:
+    m_targetNonPlayerBuilt: false
+    m_name: $pePickableSmokePuffName
+    m_description: $pePickableSmokePuffDescription
+    m_enabled: true
+    m_isUpgrade: false
+    m_comfort: 0
+    m_comfortObject: 
+    m_groundPiece: true
+    m_allowAltGroundPlacement: false
+    m_groundOnly: true
+    m_cultivatedGroundOnly: false
+    m_waterPiece: false
+    m_clipGround: false
+    m_clipEverything: false
+    m_noInWater: false
+    m_notOnWood: false
+    m_notOnTiltingSurface: false
+    m_inCeilingOnly: false
+    m_notOnFloor: false
+    m_noClipping: false
+    m_onlyInTeleportArea: false
+    m_allowedInDungeons: false
+    m_allowedInDeepSnow: false
+    m_requireDeepSnow: false
+    m_spaceRequirement: 0
+    m_repairPiece: false
+    m_removePiece: false
+    m_canRotate: true
+    m_randomInitBuildRotation: false
+    m_canBeRemoved: true
+    m_canRockJade: false
+    m_allowRotatedOverlap: false
+    m_vegetationGroundOnly: false
+    m_blockRadius: 0
+    m_connectRadius: 0
+    m_mustBeAboveConnected: false
+    m_noVines: false
+    m_extraPlacementDistance: 0
+    m_harvest: false
+    m_harvestRadius: 0
+    m_harvestRadiusMaxLevel: 0
+    m_dlc: ''
+    m_returnResourceHeightOffset: 1
+    m_destroyedLootPrefab: 
+    m_primaryTarget: false
+    m_randomTarget: true
+- Component: Piece
+  Enabled: false
+  PrefabNames:
+  - Pickable_Stone
+  Fields:
+    m_targetNonPlayerBuilt: false
+    m_name: $pePickableStoneName
+    m_description: $pePickableStoneDescription
+    m_enabled: true
+    m_isUpgrade: false
+    m_comfort: 0
+    m_comfortObject: 
+    m_groundPiece: true
+    m_allowAltGroundPlacement: false
+    m_groundOnly: true
+    m_cultivatedGroundOnly: false
+    m_waterPiece: false
+    m_clipGround: false
+    m_clipEverything: false
+    m_noInWater: false
+    m_notOnWood: false
+    m_notOnTiltingSurface: false
+    m_inCeilingOnly: false
+    m_notOnFloor: false
+    m_noClipping: false
+    m_onlyInTeleportArea: false
+    m_allowedInDungeons: false
+    m_allowedInDeepSnow: false
+    m_requireDeepSnow: false
+    m_spaceRequirement: 0
+    m_repairPiece: false
+    m_removePiece: false
+    m_canRotate: true
+    m_randomInitBuildRotation: false
+    m_canBeRemoved: true
+    m_canRockJade: false
+    m_allowRotatedOverlap: false
+    m_vegetationGroundOnly: false
+    m_blockRadius: 0
+    m_connectRadius: 0
+    m_mustBeAboveConnected: false
+    m_noVines: false
+    m_extraPlacementDistance: 0
+    m_harvest: false
+    m_harvestRadius: 0
+    m_harvestRadiusMaxLevel: 0
+    m_dlc: ''
+    m_returnResourceHeightOffset: 1
+    m_destroyedLootPrefab: 
+    m_primaryTarget: false
+    m_randomTarget: true
+- Component: Piece
+  Enabled: false
+  PrefabNames:
+  - Pickable_Thistle
+  Fields:
+    m_targetNonPlayerBuilt: false
+    m_name: $pePickableThistleName
+    m_description: $pePickableThistleDescription
+    m_enabled: true
+    m_isUpgrade: false
+    m_comfort: 0
+    m_comfortObject: 
+    m_groundPiece: true
+    m_allowAltGroundPlacement: false
+    m_groundOnly: true
+    m_cultivatedGroundOnly: false
+    m_waterPiece: false
+    m_clipGround: false
+    m_clipEverything: false
+    m_noInWater: false
+    m_notOnWood: false
+    m_notOnTiltingSurface: false
+    m_inCeilingOnly: false
+    m_notOnFloor: false
+    m_noClipping: false
+    m_onlyInTeleportArea: false
+    m_allowedInDungeons: false
+    m_allowedInDeepSnow: false
+    m_requireDeepSnow: false
+    m_spaceRequirement: 0
+    m_repairPiece: false
+    m_removePiece: false
+    m_canRotate: true
+    m_randomInitBuildRotation: false
+    m_canBeRemoved: true
+    m_canRockJade: false
+    m_allowRotatedOverlap: false
+    m_vegetationGroundOnly: false
+    m_blockRadius: 0
+    m_connectRadius: 0
+    m_mustBeAboveConnected: false
+    m_noVines: false
+    m_extraPlacementDistance: 0
+    m_harvest: false
+    m_harvestRadius: 0
+    m_harvestRadiusMaxLevel: 0
+    m_dlc: ''
+    m_returnResourceHeightOffset: 1
+    m_destroyedLootPrefab: 
+    m_primaryTarget: false
+    m_randomTarget: true
 - Component: Piece
   Enabled: false
   PrefabNames:
@@ -118790,6 +119878,57 @@ Entries:
 - Component: Piece
   Enabled: false
   PrefabNames:
+  - RaspberryBush
+  Fields:
+    m_targetNonPlayerBuilt: false
+    m_name: $peRaspberryBushName
+    m_description: $peRaspberryBushDescription
+    m_enabled: true
+    m_isUpgrade: false
+    m_comfort: 0
+    m_comfortObject: 
+    m_groundPiece: true
+    m_allowAltGroundPlacement: false
+    m_groundOnly: true
+    m_cultivatedGroundOnly: false
+    m_waterPiece: false
+    m_clipGround: false
+    m_clipEverything: false
+    m_noInWater: false
+    m_notOnWood: false
+    m_notOnTiltingSurface: false
+    m_inCeilingOnly: false
+    m_notOnFloor: false
+    m_noClipping: false
+    m_onlyInTeleportArea: false
+    m_allowedInDungeons: false
+    m_allowedInDeepSnow: false
+    m_requireDeepSnow: false
+    m_spaceRequirement: 0
+    m_repairPiece: false
+    m_removePiece: false
+    m_canRotate: true
+    m_randomInitBuildRotation: false
+    m_canBeRemoved: true
+    m_canRockJade: false
+    m_allowRotatedOverlap: false
+    m_vegetationGroundOnly: false
+    m_blockRadius: 0
+    m_connectRadius: 0
+    m_mustBeAboveConnected: false
+    m_noVines: false
+    m_extraPlacementDistance: 0
+    m_harvest: false
+    m_harvestRadius: 0
+    m_harvestRadiusMaxLevel: 0
+    m_dlc: ''
+    m_returnResourceHeightOffset: 1
+    m_destroyedLootPrefab: 
+    m_primaryTarget: false
+    m_randomTarget: true
+- Component: Piece
+  Enabled: false
+  PrefabNames:
   - replant
   Fields:
     m_targetNonPlayerBuilt: true
@@ -121385,6 +122524,108 @@ Entries:
     m_harvestRadiusMaxLevel: 0
     m_dlc: ''
     m_returnResourceHeightOffset: 0.1
+    m_destroyedLootPrefab: 
+    m_primaryTarget: false
+    m_randomTarget: true
+- Component: Piece
+  Enabled: false
+  PrefabNames:
+  - shrub_2
+  Fields:
+    m_targetNonPlayerBuilt: false
+    m_name: $peShrub01Name
+    m_description: $peShrub01Description
+    m_enabled: true
+    m_isUpgrade: false
+    m_comfort: 0
+    m_comfortObject: 
+    m_groundPiece: true
+    m_allowAltGroundPlacement: false
+    m_groundOnly: true
+    m_cultivatedGroundOnly: false
+    m_waterPiece: false
+    m_clipGround: false
+    m_clipEverything: false
+    m_noInWater: false
+    m_notOnWood: false
+    m_notOnTiltingSurface: false
+    m_inCeilingOnly: false
+    m_notOnFloor: false
+    m_noClipping: false
+    m_onlyInTeleportArea: false
+    m_allowedInDungeons: false
+    m_allowedInDeepSnow: false
+    m_requireDeepSnow: false
+    m_spaceRequirement: 0
+    m_repairPiece: false
+    m_removePiece: false
+    m_canRotate: true
+    m_randomInitBuildRotation: false
+    m_canBeRemoved: false
+    m_canRockJade: false
+    m_allowRotatedOverlap: false
+    m_vegetationGroundOnly: false
+    m_blockRadius: 0
+    m_connectRadius: 0
+    m_mustBeAboveConnected: false
+    m_noVines: false
+    m_extraPlacementDistance: 0
+    m_harvest: false
+    m_harvestRadius: 0
+    m_harvestRadiusMaxLevel: 0
+    m_dlc: ''
+    m_returnResourceHeightOffset: 1
+    m_destroyedLootPrefab: 
+    m_primaryTarget: false
+    m_randomTarget: true
+- Component: Piece
+  Enabled: false
+  PrefabNames:
+  - shrub_2_heath
+  Fields:
+    m_targetNonPlayerBuilt: false
+    m_name: $peShrub02Name
+    m_description: $peShrub02Description
+    m_enabled: true
+    m_isUpgrade: false
+    m_comfort: 0
+    m_comfortObject: 
+    m_groundPiece: true
+    m_allowAltGroundPlacement: false
+    m_groundOnly: true
+    m_cultivatedGroundOnly: false
+    m_waterPiece: false
+    m_clipGround: false
+    m_clipEverything: false
+    m_noInWater: false
+    m_notOnWood: false
+    m_notOnTiltingSurface: false
+    m_inCeilingOnly: false
+    m_notOnFloor: false
+    m_noClipping: false
+    m_onlyInTeleportArea: false
+    m_allowedInDungeons: false
+    m_allowedInDeepSnow: false
+    m_requireDeepSnow: false
+    m_spaceRequirement: 0
+    m_repairPiece: false
+    m_removePiece: false
+    m_canRotate: true
+    m_randomInitBuildRotation: false
+    m_canBeRemoved: false
+    m_canRockJade: false
+    m_allowRotatedOverlap: false
+    m_vegetationGroundOnly: false
+    m_blockRadius: 0
+    m_connectRadius: 0
+    m_mustBeAboveConnected: false
+    m_noVines: false
+    m_extraPlacementDistance: 0
+    m_harvest: false
+    m_harvestRadius: 0
+    m_harvestRadiusMaxLevel: 0
+    m_dlc: ''
+    m_returnResourceHeightOffset: 1
     m_destroyedLootPrefab: 
     m_primaryTarget: false
     m_randomTarget: true
@@ -125471,6 +126712,57 @@ Entries:
 - Component: Piece
   Enabled: false
   PrefabNames:
+  - vines
+  Fields:
+    m_targetNonPlayerBuilt: false
+    m_name: $peVinesName
+    m_description: $peVinesDescription
+    m_enabled: true
+    m_isUpgrade: false
+    m_comfort: 0
+    m_comfortObject: 
+    m_groundPiece: false
+    m_allowAltGroundPlacement: false
+    m_groundOnly: false
+    m_cultivatedGroundOnly: false
+    m_waterPiece: false
+    m_clipGround: false
+    m_clipEverything: false
+    m_noInWater: false
+    m_notOnWood: false
+    m_notOnTiltingSurface: false
+    m_inCeilingOnly: false
+    m_notOnFloor: false
+    m_noClipping: false
+    m_onlyInTeleportArea: false
+    m_allowedInDungeons: false
+    m_allowedInDeepSnow: false
+    m_requireDeepSnow: false
+    m_spaceRequirement: 0
+    m_repairPiece: false
+    m_removePiece: false
+    m_canRotate: true
+    m_randomInitBuildRotation: false
+    m_canBeRemoved: true
+    m_canRockJade: false
+    m_allowRotatedOverlap: false
+    m_vegetationGroundOnly: false
+    m_blockRadius: 0
+    m_connectRadius: 0
+    m_mustBeAboveConnected: false
+    m_noVines: false
+    m_extraPlacementDistance: 0
+    m_harvest: false
+    m_harvestRadius: 0
+    m_harvestRadiusMaxLevel: 0
+    m_dlc: ''
+    m_returnResourceHeightOffset: 1
+    m_destroyedLootPrefab: 
+    m_primaryTarget: false
+    m_randomTarget: true
+- Component: Piece
+  Enabled: false
+  PrefabNames:
   - windmill
   Fields:
     m_targetNonPlayerBuilt: true
@@ -128735,6 +130027,57 @@ Entries:
 - Component: Piece
   Enabled: false
   PrefabNames:
+  - YggaShoot_small1
+  Fields:
+    m_targetNonPlayerBuilt: false
+    m_name: $peYggaShootName
+    m_description: $peYggaShootDescription
+    m_enabled: true
+    m_isUpgrade: false
+    m_comfort: 0
+    m_comfortObject: 
+    m_groundPiece: true
+    m_allowAltGroundPlacement: false
+    m_groundOnly: true
+    m_cultivatedGroundOnly: false
+    m_waterPiece: false
+    m_clipGround: false
+    m_clipEverything: false
+    m_noInWater: false
+    m_notOnWood: false
+    m_notOnTiltingSurface: false
+    m_inCeilingOnly: false
+    m_notOnFloor: false
+    m_noClipping: false
+    m_onlyInTeleportArea: false
+    m_allowedInDungeons: false
+    m_allowedInDeepSnow: false
+    m_requireDeepSnow: false
+    m_spaceRequirement: 0
+    m_repairPiece: false
+    m_removePiece: false
+    m_canRotate: true
+    m_randomInitBuildRotation: false
+    m_canBeRemoved: false
+    m_canRockJade: false
+    m_allowRotatedOverlap: false
+    m_vegetationGroundOnly: false
+    m_blockRadius: 0
+    m_connectRadius: 0
+    m_mustBeAboveConnected: false
+    m_noVines: false
+    m_extraPlacementDistance: 0
+    m_harvest: false
+    m_harvestRadius: 0
+    m_harvestRadiusMaxLevel: 0
+    m_dlc: ''
+    m_returnResourceHeightOffset: 1
+    m_destroyedLootPrefab: 
+    m_primaryTarget: false
+    m_randomTarget: true
+- Component: Piece
+  Enabled: false
+  PrefabNames:
   - YggdrasilPorridge
   Fields:
     m_targetNonPlayerBuilt: true
@@ -128783,6 +130126,210 @@ Entries:
     m_destroyedLootPrefab: 
     m_primaryTarget: false
     m_randomTarget: true
+- Component: Piece
+  Enabled: false
+  PrefabNames:
+  - Ashwood_Sapling
+  Fields:
+    m_targetNonPlayerBuilt: true
+    m_name: $peAshwoodSaplingName
+    m_description: $peAshwoodSaplingDescription
+    m_enabled: true
+    m_isUpgrade: false
+    m_comfort: 0
+    m_comfortObject: 
+    m_groundPiece: false
+    m_allowAltGroundPlacement: false
+    m_groundOnly: true
+    m_cultivatedGroundOnly: false
+    m_waterPiece: false
+    m_clipGround: true
+    m_clipEverything: false
+    m_noInWater: true
+    m_notOnWood: false
+    m_notOnTiltingSurface: false
+    m_inCeilingOnly: false
+    m_notOnFloor: false
+    m_noClipping: false
+    m_onlyInTeleportArea: false
+    m_allowedInDungeons: false
+    m_allowedInDeepSnow: false
+    m_requireDeepSnow: false
+    m_spaceRequirement: 0
+    m_repairPiece: false
+    m_removePiece: false
+    m_canRotate: true
+    m_randomInitBuildRotation: true
+    m_canBeRemoved: false
+    m_canRockJade: false
+    m_allowRotatedOverlap: false
+    m_vegetationGroundOnly: false
+    m_blockRadius: 0
+    m_connectRadius: 0
+    m_mustBeAboveConnected: false
+    m_noVines: false
+    m_extraPlacementDistance: 0
+    m_harvest: false
+    m_harvestRadius: 0
+    m_harvestRadiusMaxLevel: 0
+    m_dlc: ''
+    m_returnResourceHeightOffset: 1
+    m_destroyedLootPrefab: 
+    m_primaryTarget: false
+    m_randomTarget: false
+- Component: Piece
+  Enabled: false
+  PrefabNames:
+  - Ygga_Sapling
+  Fields:
+    m_targetNonPlayerBuilt: true
+    m_name: $peYggaSaplingName
+    m_description: $peYggaSaplingDescription
+    m_enabled: true
+    m_isUpgrade: false
+    m_comfort: 0
+    m_comfortObject: 
+    m_groundPiece: false
+    m_allowAltGroundPlacement: false
+    m_groundOnly: true
+    m_cultivatedGroundOnly: false
+    m_waterPiece: false
+    m_clipGround: true
+    m_clipEverything: false
+    m_noInWater: true
+    m_notOnWood: false
+    m_notOnTiltingSurface: false
+    m_inCeilingOnly: false
+    m_notOnFloor: false
+    m_noClipping: false
+    m_onlyInTeleportArea: false
+    m_allowedInDungeons: false
+    m_allowedInDeepSnow: false
+    m_requireDeepSnow: false
+    m_spaceRequirement: 0
+    m_repairPiece: false
+    m_removePiece: false
+    m_canRotate: true
+    m_randomInitBuildRotation: false
+    m_canBeRemoved: false
+    m_canRockJade: false
+    m_allowRotatedOverlap: false
+    m_vegetationGroundOnly: false
+    m_blockRadius: 0
+    m_connectRadius: 0
+    m_mustBeAboveConnected: false
+    m_noVines: false
+    m_extraPlacementDistance: 0
+    m_harvest: false
+    m_harvestRadius: 0
+    m_harvestRadiusMaxLevel: 0
+    m_dlc: ''
+    m_returnResourceHeightOffset: 1
+    m_destroyedLootPrefab: 
+    m_primaryTarget: false
+    m_randomTarget: false
+- Component: Piece
+  Enabled: false
+  PrefabNames:
+  - Ancient_Sapling
+  Fields:
+    m_targetNonPlayerBuilt: true
+    m_name: $peAncientSaplingName
+    m_description: $peAncientSaplingDescription
+    m_enabled: true
+    m_isUpgrade: false
+    m_comfort: 0
+    m_comfortObject: 
+    m_groundPiece: false
+    m_allowAltGroundPlacement: false
+    m_groundOnly: true
+    m_cultivatedGroundOnly: false
+    m_waterPiece: false
+    m_clipGround: true
+    m_clipEverything: false
+    m_noInWater: true
+    m_notOnWood: false
+    m_notOnTiltingSurface: false
+    m_inCeilingOnly: false
+    m_notOnFloor: false
+    m_noClipping: false
+    m_onlyInTeleportArea: false
+    m_allowedInDungeons: false
+    m_allowedInDeepSnow: false
+    m_requireDeepSnow: false
+    m_spaceRequirement: 0
+    m_repairPiece: false
+    m_removePiece: false
+    m_canRotate: true
+    m_randomInitBuildRotation: false
+    m_canBeRemoved: false
+    m_canRockJade: false
+    m_allowRotatedOverlap: false
+    m_vegetationGroundOnly: false
+    m_blockRadius: 0
+    m_connectRadius: 0
+    m_mustBeAboveConnected: false
+    m_noVines: false
+    m_extraPlacementDistance: 0
+    m_harvest: false
+    m_harvestRadius: 0
+    m_harvestRadiusMaxLevel: 0
+    m_dlc: ''
+    m_returnResourceHeightOffset: 1
+    m_destroyedLootPrefab: 
+    m_primaryTarget: false
+    m_randomTarget: false
+- Component: Piece
+  Enabled: false
+  PrefabNames:
+  - Autumn_Birch_Sapling
+  Fields:
+    m_targetNonPlayerBuilt: true
+    m_name: $peAutumnBirchSaplingName
+    m_description: $peAutumnBirchSaplingDescription
+    m_enabled: true
+    m_isUpgrade: false
+    m_comfort: 0
+    m_comfortObject: 
+    m_groundPiece: false
+    m_allowAltGroundPlacement: false
+    m_groundOnly: true
+    m_cultivatedGroundOnly: false
+    m_waterPiece: false
+    m_clipGround: true
+    m_clipEverything: false
+    m_noInWater: true
+    m_notOnWood: false
+    m_notOnTiltingSurface: false
+    m_inCeilingOnly: false
+    m_notOnFloor: false
+    m_noClipping: false
+    m_onlyInTeleportArea: false
+    m_allowedInDungeons: false
+    m_allowedInDeepSnow: false
+    m_requireDeepSnow: false
+    m_spaceRequirement: 0
+    m_repairPiece: false
+    m_removePiece: false
+    m_canRotate: true
+    m_randomInitBuildRotation: true
+    m_canBeRemoved: false
+    m_canRockJade: false
+    m_allowRotatedOverlap: false
+    m_vegetationGroundOnly: false
+    m_blockRadius: 0
+    m_connectRadius: 0
+    m_mustBeAboveConnected: false
+    m_noVines: false
+    m_extraPlacementDistance: 0
+    m_harvest: false
+    m_harvestRadius: 0
+    m_harvestRadiusMaxLevel: 0
+    m_dlc: ''
+    m_returnResourceHeightOffset: 1
+    m_destroyedLootPrefab: 
+    m_primaryTarget: false
+    m_randomTarget: false
 - Component: Plant
   Enabled: false
   PrefabNames:
@@ -128790,7 +130337,7 @@ Entries:
   Fields:
     m_name: $prop_beech_sapling
     m_growTime: 3000
-    m_growTimeMax: 5000
+    m_growTimeMax: 3000
     m_minScale: 0.8
     m_maxScale: 1.5
     m_growRadius: 2
@@ -128807,8 +130354,8 @@ Entries:
   - Birch_Sapling
   Fields:
     m_name: $prop_birch_sapling
-    m_growTime: 5000
-    m_growTimeMax: 7000
+    m_growTime: 3000
+    m_growTimeMax: 3000
     m_minScale: 0.5
     m_maxScale: 1
     m_growRadius: 2
@@ -128826,7 +130373,7 @@ Entries:
   Fields:
     m_name: $prop_fir_big_sapling
     m_growTime: 3000
-    m_growTimeMax: 5000
+    m_growTimeMax: 3000
     m_minScale: 1
     m_maxScale: 2.5
     m_growRadius: 2
@@ -128844,7 +130391,7 @@ Entries:
   Fields:
     m_name: $prop_fir_sapling
     m_growTime: 3000
-    m_growTimeMax: 5000
+    m_growTimeMax: 3000
     m_minScale: 1
     m_maxScale: 2.5
     m_growRadius: 2
@@ -128861,8 +130408,8 @@ Entries:
   - Oak_Sapling
   Fields:
     m_name: $prop_oak_sapling
-    m_growTime: 6000
-    m_growTimeMax: 8000
+    m_growTime: 3000
+    m_growTimeMax: 3000
     m_minScale: 0.7
     m_maxScale: 0.9
     m_growRadius: 3
@@ -128880,7 +130427,7 @@ Entries:
   Fields:
     m_name: $prop_pine_sapling
     m_growTime: 3000
-    m_growTimeMax: 5000
+    m_growTimeMax: 3000
     m_minScale: 1.5
     m_maxScale: 2.5
     m_growRadius: 2
@@ -128991,7 +130538,7 @@ Entries:
     m_growTimeMax: 5000
     m_minScale: 0.9
     m_maxScale: 1.1
-    m_growRadius: 0.8
+    m_growRadius: 0.5
     m_growRadiusVines: 0
     m_needCultivatedGround: true
     m_destroyIfCantGrow: true
@@ -129179,6 +130726,78 @@ Entries:
     m_tolerateCold: false
     m_hoverOffset: 0
     m_attachDistance: 1.8
+- Component: Plant
+  Enabled: false
+  PrefabNames:
+  - Ashwood_Sapling
+  Fields:
+    m_name: $peAshwoodSaplingName
+    m_growTime: 3000
+    m_growTimeMax: 3000
+    m_minScale: 0.5
+    m_maxScale: 2
+    m_growRadius: 2
+    m_growRadiusVines: 0
+    m_needCultivatedGround: false
+    m_destroyIfCantGrow: true
+    m_tolerateHeat: true
+    m_tolerateCold: false
+    m_hoverOffset: 0
+    m_attachDistance: 0
+- Component: Plant
+  Enabled: false
+  PrefabNames:
+  - Ygga_Sapling
+  Fields:
+    m_name: $peYggaSaplingName
+    m_growTime: 3000
+    m_growTimeMax: 3000
+    m_minScale: 0.5
+    m_maxScale: 2
+    m_growRadius: 2
+    m_growRadiusVines: 0
+    m_needCultivatedGround: false
+    m_destroyIfCantGrow: true
+    m_tolerateHeat: false
+    m_tolerateCold: false
+    m_hoverOffset: 0
+    m_attachDistance: 0
+- Component: Plant
+  Enabled: false
+  PrefabNames:
+  - Ancient_Sapling
+  Fields:
+    m_name: $peAncientSaplingName
+    m_growTime: 3000
+    m_growTimeMax: 3000
+    m_minScale: 0.5
+    m_maxScale: 2
+    m_growRadius: 2
+    m_growRadiusVines: 0
+    m_needCultivatedGround: false
+    m_destroyIfCantGrow: true
+    m_tolerateHeat: false
+    m_tolerateCold: false
+    m_hoverOffset: 0
+    m_attachDistance: 0
+- Component: Plant
+  Enabled: false
+  PrefabNames:
+  - Autumn_Birch_Sapling
+  Fields:
+    m_name: $peAutumnBirchSaplingName
+    m_growTime: 3000
+    m_growTimeMax: 3000
+    m_minScale: 0.5
+    m_maxScale: 1
+    m_growRadius: 2
+    m_growRadiusVines: 0
+    m_needCultivatedGround: false
+    m_destroyIfCantGrow: true
+    m_tolerateHeat: false
+    m_tolerateCold: false
+    m_hoverOffset: 0
+    m_attachDistance: 0
 - Component: Player
   Enabled: false
   PrefabNames:
@@ -145155,6 +146774,46 @@ Entries:
     m_fall: true
     m_checkSolids: true
     m_fallCheckRadius: 0.2
+    m_updateWaitTime: 20
+- Component: StaticPhysics
+  Enabled: false
+  PrefabNames:
+  - Ashwood_Sapling
+  Fields:
+    m_pushUp: true
+    m_fall: true
+    m_checkSolids: false
+    m_fallCheckRadius: 0
+    m_updateWaitTime: 20
+- Component: StaticPhysics
+  Enabled: false
+  PrefabNames:
+  - Ygga_Sapling
+  Fields:
+    m_pushUp: true
+    m_fall: true
+    m_checkSolids: false
+    m_fallCheckRadius: 0
+    m_updateWaitTime: 20
+- Component: StaticPhysics
+  Enabled: false
+  PrefabNames:
+  - Ancient_Sapling
+  Fields:
+    m_pushUp: true
+    m_fall: true
+    m_checkSolids: false
+    m_fallCheckRadius: 0
+    m_updateWaitTime: 20
+- Component: StaticPhysics
+  Enabled: false
+  PrefabNames:
+  - Autumn_Birch_Sapling
+  Fields:
+    m_pushUp: true
+    m_fall: true
+    m_checkSolids: false
+    m_fallCheckRadius: 0
     m_updateWaitTime: 20
 - Component: StaticRotation
   Enabled: false

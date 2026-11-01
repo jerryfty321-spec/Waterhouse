@@ -57,13 +57,21 @@ access to this repo.
    - `shudnal-Seasons` plus its dependencies `shudnal-ConditionalConfigSync` and
      `ValheimModding-JsonDotNET` — each into `BepInEx\plugins\<package name>\`.
      **Every player must have all three installed too**, or they can't join properly.
-     Settings are in the host's `BepInEx\config\shudnal.Seasons.cfg` (and the
-     `shudnal.Seasons\` folder there); the server controls the season and weather.
+     The server controls the season and weather. Its settings are shared through this
+     repo (see below).
 
    The ServersideQoL settings are the `ArgusMagnus.ServersideQoL*.cfg` files in this repo (next to
    the world files), so every host runs the same ones. The launcher switches each host to
    them automatically (`ConfigPerWorld = true`). Edit them here; the mod reloads changes
    while the server is running.
+
+   Seasons can only read its settings from the server's `BepInEx\config`, so the shared
+   copy is in `bepinex-config\` here (`shudnal.Seasons.cfg`, override files in
+   `shudnal.Seasons\`, and `shudnal.ConditionalConfigSync\`). The launcher copies them into
+   `BepInEx\config` before the server starts and copies them back before every commit.
+   **Edit them in `BepInEx\config`** (the mod reloads them while running), not in
+   `bepinex-config\`: changes made there while the server runs get overwritten.
+   PlantEverything's `advize.PlantEverything.cfg` stays per host for now.
 6. Forward **UDP 2456–2458** on your router to the hosting PC so friends outside your
    network can join.
 
