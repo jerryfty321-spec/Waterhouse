@@ -40,7 +40,7 @@ access to this repo.
    Valid values: `-preset normal|casual|easy|hard|hardcore|immersive|hammer`,
    `-modifier combat|deathpenalty|resources|raids|portals <value>`,
    `-setkey nobuildcost|playerevents|passivemobs|nomap` (see the Dedicated Server manual).
-5. Install the server-side mods (players don't need anything). Install these from
+5. Install the server mods. Install these from
    [Thunderstore](https://thunderstore.io/c/valheim/) into the dedicated server folder,
    with r2modman or by hand:
    - `denikson-BepInExPack_Valheim` 5.4.2351 — copy the contents of its
@@ -49,8 +49,13 @@ access to this repo.
    - `ArgusMagnus-ServersideQoL_` + `Player`, `Backpack`, `ContainerSigns`, `AutoProcess`,
      `Treesurrection`, `MultiplayerTweaks`, `AdminOptions`, `AutoStore`, `PrefabConfigurator` — each into
      `BepInEx\plugins\<package name>\`
+   - `Advize-PlantEverything` — into `BepInEx\plugins\Advize-PlantEverything\`. Unlike the
+     others, **players need it too** (installed in their own game) to plant the extra
+     things with the cultivator; players without it can still see and pick them. Its
+     settings are in the host's `BepInEx\config\advize.PlantEverything.cfg` and are synced
+     to players while they're connected.
 
-   The mod settings are the `ArgusMagnus.ServersideQoL*.cfg` files in this repo (next to
+   The ServersideQoL settings are the `ArgusMagnus.ServersideQoL*.cfg` files in this repo (next to
    the world files), so every host runs the same ones. The launcher switches each host to
    them automatically (`ConfigPerWorld = true`). Edit them here; the mod reloads changes
    while the server is running.
