@@ -100,21 +100,11 @@
     "remove": [
       {
         "m_name": "Deep north",
-        "m_environment": {
-          "m_environment": "Twilight_Snow",
-          "m_weight": 0.0,
-          "m_ashlandsOverride": false,
-          "m_deepnorthOverride": false
-        }
+        "m_environment": "Twilight_Snow"
       },
       {
         "m_name": "Deep north",
-        "m_environment": {
-          "m_environment": "Twilight_SnowStorm",
-          "m_weight": 0.0,
-          "m_ashlandsOverride": false,
-          "m_deepnorthOverride": false
-        }
+        "m_environment": "Twilight_SnowStorm"
       }
     ],
     "replace": [
