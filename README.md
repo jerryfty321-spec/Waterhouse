@@ -54,6 +54,11 @@ access to this repo.
      things with the cultivator; players without it can still see and pick them. Its
      settings are in the host's `BepInEx\config\advize.PlantEverything.cfg` and are synced
      to players while they're connected.
+   - `shudnal-Seasons` plus its dependencies `shudnal-ConditionalConfigSync` and
+     `ValheimModding-JsonDotNET` — each into `BepInEx\plugins\<package name>\`.
+     **Every player must have all three installed too**, or they can't join properly.
+     Settings are in the host's `BepInEx\config\shudnal.Seasons.cfg` (and the
+     `shudnal.Seasons\` folder there); the server controls the season and weather.
 
    The ServersideQoL settings are the `ArgusMagnus.ServersideQoL*.cfg` files in this repo (next to
    the world files), so every host runs the same ones. The launcher switches each host to
