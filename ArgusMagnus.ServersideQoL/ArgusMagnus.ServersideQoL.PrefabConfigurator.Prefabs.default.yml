@@ -7231,8 +7231,8 @@ Entries:
   PrefabNames:
   - fx_frozenking_chain_ground_impact_1
   Fields:
-    m_strength: 3
-    m_range: 50
+    m_strength: 2.3
+    m_range: 30
     m_delay: 0
     m_continous: false
     m_continousDuration: 0
@@ -7242,19 +7242,8 @@ Entries:
   PrefabNames:
   - fx_frozenking_chain_ground_impact_2
   Fields:
-    m_strength: 1.34
-    m_range: 50
-    m_delay: 0
-    m_continous: false
-    m_continousDuration: 0
-    m_localOnly: false
-- Component: CamShaker
-  Enabled: false
-  PrefabNames:
-  - fx_frozenking_chain_ground_impact_2
-  Fields:
-    m_strength: 3
-    m_range: 50
+    m_strength: 2.3
+    m_range: 30
     m_delay: 0
     m_continous: false
     m_continousDuration: 0
@@ -7264,8 +7253,8 @@ Entries:
   PrefabNames:
   - fx_frozenking_chain_rush
   Fields:
-    m_strength: 3
-    m_range: 50
+    m_strength: 2
+    m_range: 30
     m_delay: 0
     m_continous: false
     m_continousDuration: 0
@@ -7275,19 +7264,8 @@ Entries:
   PrefabNames:
   - fx_frozenking_chain_rush_impact
   Fields:
-    m_strength: 1.34
-    m_range: 50
-    m_delay: 0
-    m_continous: false
-    m_continousDuration: 0
-    m_localOnly: false
-- Component: CamShaker
-  Enabled: false
-  PrefabNames:
-  - fx_frozenking_chain_rush_impact
-  Fields:
-    m_strength: 3
-    m_range: 50
+    m_strength: 2.5
+    m_range: 30
     m_delay: 0
     m_continous: false
     m_continousDuration: 0
@@ -25200,6 +25178,74 @@ Entries:
   - volture_strawpile
   Fields:
     m_health: 50
+    m_minDamageTreshold: 0
+    m_minToolTier: 0
+    m_hitNoise: 0
+    m_destroyNoise: 0
+    m_triggerPrivateArea: false
+    m_ttl: 0
+    m_spawnWhenDamaged: 
+    m_spawnWhenDestroyed: 
+    m_autoCreateFragments: false
+    m_hitEffectBigThreshold: 0
+    m_hitEffectBuildUpThreshold: 0
+- Component: Destructible
+  Enabled: false
+  PrefabNames:
+  - WallSnow1
+  Fields:
+    m_health: 100
+    m_minDamageTreshold: 0
+    m_minToolTier: 0
+    m_hitNoise: 0
+    m_destroyNoise: 0
+    m_triggerPrivateArea: false
+    m_ttl: 0
+    m_spawnWhenDamaged: 
+    m_spawnWhenDestroyed: 
+    m_autoCreateFragments: false
+    m_hitEffectBigThreshold: 0
+    m_hitEffectBuildUpThreshold: 0
+- Component: Destructible
+  Enabled: false
+  PrefabNames:
+  - WallSnow2
+  Fields:
+    m_health: 100
+    m_minDamageTreshold: 0
+    m_minToolTier: 0
+    m_hitNoise: 0
+    m_destroyNoise: 0
+    m_triggerPrivateArea: false
+    m_ttl: 0
+    m_spawnWhenDamaged: 
+    m_spawnWhenDestroyed: 
+    m_autoCreateFragments: false
+    m_hitEffectBigThreshold: 0
+    m_hitEffectBuildUpThreshold: 0
+- Component: Destructible
+  Enabled: false
+  PrefabNames:
+  - WallSnow3
+  Fields:
+    m_health: 100
+    m_minDamageTreshold: 0
+    m_minToolTier: 0
+    m_hitNoise: 0
+    m_destroyNoise: 0
+    m_triggerPrivateArea: false
+    m_ttl: 0
+    m_spawnWhenDamaged: 
+    m_spawnWhenDestroyed: 
+    m_autoCreateFragments: false
+    m_hitEffectBigThreshold: 0
+    m_hitEffectBuildUpThreshold: 0
+- Component: Destructible
+  Enabled: false
+  PrefabNames:
+  - WallSnow4
+  Fields:
+    m_health: 100
     m_minDamageTreshold: 0
     m_minToolTier: 0
     m_hitNoise: 0
@@ -131121,25 +131167,6 @@ Entries:
     m_spawnRandomDirection: false
     m_seperatePartner: 
     m_noPartnerOffspring: 
-- Component: Procreation
-  Enabled: false
-  PrefabNames:
-  - Wolf_spiritcaller
-  Fields:
-    m_updateInterval: 30
-    m_totalCheckRange: 10
-    m_maxCreatures: 4
-    m_partnerCheckRange: 3
-    m_pregnancyChance: 0.33
-    m_pregnancyDuration: 60
-    m_requiredLovePoints: 3
-    m_offspring: Wolf_cub
-    m_minOffspringLevel: 0
-    m_spawnOffset: 1
-    m_spawnOffsetMax: 0
-    m_spawnRandomDirection: false
-    m_seperatePartner: 
-    m_noPartnerOffspring: 
 - Component: Projectile
   Enabled: false
   PrefabNames:
@@ -193056,10 +193083,10 @@ Entries:
     m_ignoreConcurrencyDistance: true
     m_maxPitch: 1.1
     m_minPitch: 0.9
-    m_maxVol: 1
-    m_minVol: 0.6
-    m_fadeInDuration: 0.4
-    m_fadeOutDuration: 0.4
+    m_maxVol: 0.6
+    m_minVol: 0.4
+    m_fadeInDuration: 0.1
+    m_fadeOutDuration: 0.1
     m_fadeOutDelay: 0
     m_fadeOutOnAwake: false
     m_randomPan: false
@@ -193090,10 +193117,10 @@ Entries:
     m_ignoreConcurrencyDistance: true
     m_maxPitch: 1.1
     m_minPitch: 0.9
-    m_maxVol: 1
-    m_minVol: 0.6
-    m_fadeInDuration: 0.4
-    m_fadeOutDuration: 0.4
+    m_maxVol: 0.6
+    m_minVol: 0.4
+    m_fadeInDuration: 0.1
+    m_fadeOutDuration: 0.1
     m_fadeOutDelay: 0
     m_fadeOutOnAwake: false
     m_randomPan: false
@@ -193124,10 +193151,10 @@ Entries:
     m_ignoreConcurrencyDistance: true
     m_maxPitch: 1.1
     m_minPitch: 0.9
-    m_maxVol: 1
-    m_minVol: 0.6
-    m_fadeInDuration: 0.4
-    m_fadeOutDuration: 0.4
+    m_maxVol: 0.6
+    m_minVol: 0.4
+    m_fadeInDuration: 0.1
+    m_fadeOutDuration: 0.1
     m_fadeOutDelay: 0
     m_fadeOutOnAwake: false
     m_randomPan: false
@@ -193158,10 +193185,10 @@ Entries:
     m_ignoreConcurrencyDistance: true
     m_maxPitch: 1.1
     m_minPitch: 0.9
-    m_maxVol: 1
-    m_minVol: 0.6
-    m_fadeInDuration: 0.4
-    m_fadeOutDuration: 0.4
+    m_maxVol: 0.6
+    m_minVol: 0.4
+    m_fadeInDuration: 0.1
+    m_fadeOutDuration: 0.1
     m_fadeOutDelay: 0
     m_fadeOutOnAwake: false
     m_randomPan: false
@@ -203494,10 +203521,10 @@ Entries:
     m_ignoreConcurrencyDistance: true
     m_maxPitch: 1.1
     m_minPitch: 0.9
-    m_maxVol: 1
-    m_minVol: 0.6
-    m_fadeInDuration: 0.4
-    m_fadeOutDuration: 0.4
+    m_maxVol: 0.6
+    m_minVol: 0.4
+    m_fadeInDuration: 0.1
+    m_fadeOutDuration: 0.1
     m_fadeOutDelay: 0
     m_fadeOutOnAwake: false
     m_randomPan: false
